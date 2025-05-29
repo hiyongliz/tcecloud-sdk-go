@@ -3368,7 +3368,8 @@ type DiskDetail struct {
 	DiskChargeType *string `json:"DiskChargeType,omitempty" name:"DiskChargeType"`
 	// 是否为弹性云盘，false表示非弹性云盘，true表示弹性云盘。
 
-	Portable *bool `json:"Portable,omitempty" name:"Portable"`
+	// Portable *bool `json:"Portable,omitempty" name:"Portable"`
+	Portable *interface{} `json:"Portable,omitempty" name:"Portable"`
 	// 云硬盘ID。
 
 	DiskId *string `json:"DiskId,omitempty" name:"DiskId"`
@@ -3747,7 +3748,8 @@ type SnapshotSImpleDiskInfo struct {
 	DiskId *string `json:"DiskId,omitempty" name:"DiskId"`
 	// 是否为弹性云盘
 
-	Portable *bool `json:"Portable,omitempty" name:"Portable"`
+	// Portable *bool `json:"Portable,omitempty" name:"Portable"`
+	Portable *interface{} `json:"Portable,omitempty" name:"Portable"`
 	// 云盘类型。CLOUD_SATA: 普通云硬盘；CLOUD_PREMIUM: 高性能云硬盘；CLOUD_SSD： SSD云硬盘
 
 	DiskType *string `json:"DiskType,omitempty" name:"DiskType"`
@@ -5185,7 +5187,8 @@ type Snapshot struct {
 	DiskUuid *string `json:"DiskUuid,omitempty" name:"DiskUuid"`
 	// 快照的额外信息。
 
-	ExtraInfo *string `json:"ExtraInfo,omitempty" name:"ExtraInfo"`
+	// ExtraInfo *string `json:"ExtraInfo,omitempty" name:"ExtraInfo"`
+	ExtraInfo *interface{} `json:"ExtraInfo,omitempty" name:"ExtraInfo"`
 	// 快照所属云盘的挂载实例信息。
 
 	Instance *DiskAttachedInstanceInfo `json:"Instance,omitempty" name:"Instance"`
@@ -8271,7 +8274,8 @@ type Disk struct {
 	DiskChargeType *string `json:"DiskChargeType,omitempty" name:"DiskChargeType"`
 	// 是否为弹性云盘，false表示非弹性云盘，true表示弹性云盘。
 
-	Portable *bool `json:"Portable,omitempty" name:"Portable"`
+	// Portable *bool `json:"Portable,omitempty" name:"Portable"`
+	Portable *interface{} `json:"Portable,omitempty" name:"Portable"`
 	// 云硬盘所在的位置。
 
 	Placement *Placement `json:"Placement,omitempty" name:"Placement"`
