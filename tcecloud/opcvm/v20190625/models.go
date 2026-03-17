@@ -920,7 +920,7 @@ type TenantInstanceSet struct {
 	StopChargingMode *string `json:"StopChargingMode,omitempty" name:"StopChargingMode"`
 	// 实例系统盘信息。
 
-	SystemDisk []*SystemDisk `json:"SystemDisk,omitempty" name:"SystemDisk"`
+	SystemDisk *SystemDisk `json:"SystemDisk,omitempty" name:"SystemDisk"`
 	// 实例的uuid
 
 	Uuid *string `json:"Uuid,omitempty" name:"Uuid"`
