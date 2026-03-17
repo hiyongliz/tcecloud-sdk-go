@@ -875,7 +875,7 @@ type TenantInstanceSet struct {
 	LatestOperationRequestId *string `json:"LatestOperationRequestId,omitempty" name:"LatestOperationRequestId"`
 	// 实例登录设置。目前只返回实例所关联的密钥。
 
-	LoginSettings []*LoginSettings `json:"LoginSettings,omitempty" name:"LoginSettings"`
+	LoginSettings *LoginSettings `json:"LoginSettings,omitempty" name:"LoginSettings"`
 	// 实例内存容量，单位：`GB`。
 
 	Memory *int64 `json:"Memory,omitempty" name:"Memory"`
