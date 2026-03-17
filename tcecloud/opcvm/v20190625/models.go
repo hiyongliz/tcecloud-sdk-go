@@ -926,7 +926,7 @@ type TenantInstanceSet struct {
 	Uuid *string `json:"Uuid,omitempty" name:"Uuid"`
 	// 实例所属虚拟私有网络信息。
 
-	VirtualPrivateCloud []*VirtualPrivateCloud `json:"VirtualPrivateCloud,omitempty" name:"VirtualPrivateCloud"`
+	VirtualPrivateCloud *VirtualPrivateCloud `json:"VirtualPrivateCloud,omitempty" name:"VirtualPrivateCloud"`
 	// 实例关联的标签列表。
 
 	Tag *Tag `json:"Tag,omitempty" name:"Tag"`
